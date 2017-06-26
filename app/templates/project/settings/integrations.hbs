@@ -1,0 +1,15 @@
+{{title "Integrations" " « " model.title " by " model.organization.name}}
+
+<div class="container">
+  <div class="page-header">
+    <h3>GitHub</h3>
+  </div>
+
+  <div class="settings">
+    {{#if user.githubId}}
+      <a href="https://github.com/apps/code-corps-local" class="button default">Install a new GitHub app</a>
+    {{else}}
+      Connect to GitHub in your {{link-to data-test-integrations-link 'user integration settings' 'settings.integrations'}} before connecting GitHub to your project.
+    {{/if}}
+  </div>
+</div>
